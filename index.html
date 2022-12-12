@@ -14,6 +14,9 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="css/fotorama.css" rel="stylesheet">
     <script src="js/fotorama.js"></script>
@@ -21,9 +24,9 @@
 
 <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
         <div class="container px-4 px-lg-5">
-            <p class="fs-1 fw-bolder w-100 text-center text-break text-uppercase">Hospedaje De María Ruta 40</p>
+            <p class="fs-1 fw-bolder w-100 text-center text-break text-uppercase custom-font-family fst-italic">Hospedaje De Maria Ruta 40</p>
         </div>
     </nav>
     <!-- Product section-->
@@ -51,7 +54,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="hospedaje-1" role="tabpanel"
                             aria-labelledby="hospedaje-1-tab">
-                            <div class="fotorama" data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-width="100%" data-ratio="800/600" data-fit="cover">
+                            <div class="fotorama" data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-width="100%" data-ratio="800/600" data-fit="scaledown">
                                 <a href="assets/h1/1.jpg"><img src="assets/h1/1thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
                                 <a href="assets/h1/2.jpg"><img src="assets/h1/2thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
                                 <a href="assets/h1/3.jpg"><img src="assets/h1/3thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
@@ -63,7 +66,7 @@
                         </div>
 
                         <div class="tab-pane fade" id="hospedaje-2" role="tabpanel" aria-labelledby="hospedaje-2-tab">
-                            <div class="fotorama" data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-width="100%" data-ratio="800/600" data-fit="cover">
+                            <div class="fotorama" data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-width="100%" data-ratio="800/600" data-fit="scaledown">
                                 <a href="assets/h2/1.jpg"><img src="assets/h2/1thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
                                 <a href="assets/h2/2.jpg"><img src="assets/h2/2thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
                                 <a href="assets/h2/3.jpg"><img src="assets/h2/3thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
@@ -75,7 +78,7 @@
                         </div>
 
                         <div class="tab-pane fade" id="exterior" role="tabpanel" aria-labelledby="exterior-tab">
-                            <div class="fotorama" data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-width="100%" data-ratio="800/600" data-fit="cover">
+                            <div class="fotorama" data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-width="100%" data-ratio="800/600" data-fit="scaledown">
                                 <a href="assets/he/1.jpg"><img src="assets/he/1thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
                                 <a href="assets/he/2.jpg"><img src="assets/he/2thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
                                 <a href="assets/he/3.jpg"><img src="assets/he/3thumb.jpg" alt="argentina, hospedaje, gobernador costa, chubut, maria ruta 40"></a>
@@ -91,15 +94,13 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="bi bi-award me-1"></i> General
+                                    <i class="bi bi-award me-1"></i> Home
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <h1 class="fs-5 fw-bolder">Somos una oferta de alojamiento en apart emplazada en la
-                                        traza de la
-                                        Histórica Ruta 40, en Gobernador Costa, Chubut, Patagonía Argentina.</h1>
+                                    <h1 class="fs-5 fw-bolder text-justify">Somos una oferta de alojamiento en apart, emplazada sobre la emblemática Ruta 40, en Gobernador Costa, Chubut, Patagonía Argentina.</h1>
                                 </div>
                             </div>
                         </div>
@@ -113,13 +114,14 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">-Accesibilidad.</li>
-                                        <li class="list-group-item">-Servicio de mucama.</li>
-                                        <li class="list-group-item">-WiFi.</li>
-                                        <li class="list-group-item">-TV Satelital.</li>
-                                        <li class="list-group-item">-Estacionamiento interno.</li>
+                                    <ul class="list-group list-group-flush text-justify fw-bolder">
                                         <li class="list-group-item">-Acceso a Minimarket</li>
+                                        <li class="list-group-item">-Alojamiento en unidades apart.</li>
+                                        <li class="list-group-item">-Baños privados.</li>
+                                        <li class="list-group-item">-Estacionamiento interno.</li>
+                                        <li class="list-group-item">-Servicio de mucama.</li>
+                                        <li class="list-group-item">-TV Satelital.</li>
+                                        <li class="list-group-item">-WiFi.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -134,7 +136,7 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <ul class="list-group list-group-flush">
+                                    <ul class="list-group list-group-flush text-justify fw-bolder">
                                         <li class="list-group-item">-Av Julio A Roca 149, Gobernador Costa, Chubut,
                                             Patagonía Argentina.</li>
                                         <li class="list-group-item">-Centro de Gobernador Costa, sobre Ruta 40, al lado
@@ -158,10 +160,10 @@
                                             <a href="mailto:rentdemaria@gmail.com"><i class="bi bi-envelope"></i> rentdemaria@gmail.com</a>
                                         </li>
                                         <li class="list-group-item">
-                                            <a href="https://api.whatsapp.com/send?phone=5492945467072"><i class="bi bi-telephone"></i> +5492945467072</a>
+                                            <a href="tel:5492945467072"><i class="bi bi-telephone"></i> +5492945467072</a>
                                         </li>
                                         <li class="list-group-item">
-                                            <a href="tel:5492945467072"><i class="bi bi-whatsapp"></i> +5492945467072</a>
+                                            <a href="https://api.whatsapp.com/send?phone=5492945467072"><i class="bi bi-whatsapp"></i> +5492945467072</a>
                                         </li>
                                     </ul>
                                 </div>

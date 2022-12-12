@@ -1,0 +1,16 @@
+.custom-navbar {
+  background-color: #e3f2fd;
+}
+
+.custom-font-family {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+body {
+  background-image: url("../assets/background.png");
+  background-size: cover;
+}
